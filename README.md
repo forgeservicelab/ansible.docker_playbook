@@ -17,13 +17,13 @@ sudo ansible-galaxy install -r requirements.yml
 Once you have the roles installed, and the instance running, use the playbook as:
 
 ```
-ansible-playbook -s d.yml -e h=your\_ubuntu\_host
+ansible-playbook -s d.yml -e h=your_ubuntu_host
 ```
 
 If the playbook succeeded, you can test that the containers are running:
 
 ```
-for p in 800{1,2,3}; do curl host\_ip\_or\_name:$p; done
+for p in 800{1,2,3}; do curl host_ip_or_name:$p; done
 ```
 
 Output should be
