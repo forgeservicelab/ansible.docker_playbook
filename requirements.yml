@@ -1,0 +1,6 @@
+- src: angstwad.docker_ubuntu
+
+- src: git+https://git.forgeservicelab.fi/ansible-roles/forge_hostname.git
+  name: forge_hostname
+
+- src: https://github.com/t0mk/dockerdemo
