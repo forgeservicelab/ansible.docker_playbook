@@ -2,6 +2,8 @@
 
 This playbook installs Docker on Ubuntu 14.04 and runs containers.
 
+To use this, you must have instance of Ubuntu 14.04 running and you must be able to reach ports 22, 8001, 8002 and 8003.
+
 It's using roles
  * https://github.com/angstwad/docker.ubuntu
  * https://github.com/t0mk/dockerdemo
@@ -17,3 +19,16 @@ Once you have the roles installed, and the instance running, use the playbook as
 ```
 ansible-playbook -s d.yml -e h=your\_ubuntu\_host
 ```
+
+If the playbook succeeded, you can test that the containers are running:
+
+```
+for p in 800{1,2,3}; do curl host\_ip\_or\_name:$p; done
+```
+
+Output should be
+
+```
+Hello world!Hello world!Hello world!
+```
+
