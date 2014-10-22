@@ -4,6 +4,8 @@ This playbook installs Docker on Ubuntu 14.04 and runs containers.
 
 To use this, you must have instance of Ubuntu 14.04 running and you must be able to reach ports 22, 8001, 8002 and 8003.
 
+**You must also have Ansible 1.8.**
+
 It's using roles
  * https://github.com/angstwad/docker.ubuntu
  * https://github.com/t0mk/dockerdemo
