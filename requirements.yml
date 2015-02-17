@@ -1,3 +1,5 @@
 - src: angstwad.docker_ubuntu
+  path: roles/
 
 - src: https://github.com/t0mk/dockerdemo
+  path: roles/
